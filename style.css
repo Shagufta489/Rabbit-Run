@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+    overflow: hidden;
+}
+
+#container {
+    background-size: 100vw 100vh;
+}
+#container img{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+#container #rabbit {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+}
+
+#container #rabbit img {
+    height: 100px;
+    width: 100px;
+}
+
+.rabbitActive {
+    animation: animateRabbit 0.5s linear infinite;
+}
+
+@keyframes animateRabbit {
+
+    0%,
+    100% {
+        bottom: 100px;
+    }
+
+    45%,
+    55% {
+        bottom: 400px;
+    }
+}
+
+#container #dragon {
+    height: 100px;
+    width: 120px;
+    position: absolute;
+    bottom: 100px;
+    right: -20px;
+}
+
+#container #dragon img {
+    height: 100px;
+    width: 150px;
+}
+
+.dragonActive {
+    animation: dragonAnimate 3s linear infinite;
+}
+
+@keyframes dragonAnimate {
+    0% {
+        right: -125px;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+#start1{
+    display: none;
+    color: chartreuse ;
+    left: calc(50% - 300px);
+    top: calc(50% + 150px);
+    font-size: 50px;
+    font-family: cursive;
+    text-shadow: 5px 5px green;
+    position: absolute;
+    text-align: center;
+    width: 500px;
+    height: 100px;
+}
+
+#score {
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    color: chartreuse;
+    font-family: cursive;
+    font-size: 30px;
+    text-shadow: 3px 3px green;
+}
+
+#gameOver {
+    display: none;
+    font-size: 70px;
+    font-family: cursive;
+    position: absolute;
+    text-align: center;
+    text-shadow: 5px 5px green;
+    background-color: crimson ;
+    border: 2px solid crimson;
+    border-radius: 30px;
+    left: calc(50% - 181px);
+    top: calc(50% - 100px);
+    width: 370px;
+    height: 120px;
+    color: chartreuse;
+}
+#restart {
+    display: none;
+    font-size: 30px;
+    font-family: cursive;
+    text-shadow: 3px 3px green;
+    position: absolute;
+    text-align: center;
+    border: 2px solid crimson;
+    border-radius: 30px;
+    background-color: crimson;
+    left: calc(50% - 140px);
+    top: calc(50% + 30px);
+    width: 300px;
+    height: 100px;
+    color: chartreuse;
+}
+#bg{
+    background-size: 100wh 100vh;
+}
+#bg img{
+    height: 670px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#bg #gameName{
+    position: absolute;
+    left: calc(50% - 400px); 
+    top: calc(50% - 330px);
+    width: 800px;
+    height: 120px;
+}
+#title{
+    font-size: 150px;
+    font-family: cursive;
+    text-align: center;
+    color: chartreuse;
+    text-shadow: 10px 10px green;
+}
+#options {
+    position: absolute;
+    left: calc(50% - 120px); 
+    top: calc(50% - 30px);
+    width: 250px;
+    height: 80px;
+    background-color: crimson;
+    text-align: center;
+    border: 1px solid crimson;
+    border-radius: 30px;
+}
+
+#play{
+    text-decoration: none;
+    color: chartreuse;
+    font-family: cursive;
+    text-shadow: 5px 5px green;
+    font-size: 50px;
+   
+    
+}
